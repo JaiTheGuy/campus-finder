@@ -1,9 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React, {Component} from "react"
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+class App extends Component {
+    constructor() {
+        super()
+        this.state = {}
+    }
+    
+    render() {
+        return (
+            <form>
+                <input type="text" placeholder="First Name" />
+            </form>
+        )
+    }
+}
+
+export default App
