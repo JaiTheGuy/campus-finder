@@ -10,6 +10,7 @@ function ShowStudent (){
 <div class="submit">
 	<div class="submit">
 		<br></br>
+		
 	<div>
       <p><button>Add Student</button ></p>
 
@@ -22,6 +23,20 @@ function ShowStudent (){
 				type="text"
 		
 				placeholder="Name"
+				
+                
+                  />
+				  <input
+				type="text"
+		
+				placeholder="Emplid ID"
+				
+                
+                  />
+				  <input
+				type="text"
+		
+				placeholder="GPA"
 				
                 
                   />

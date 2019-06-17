@@ -5,6 +5,7 @@ import App from './App'
 import StudentForm from "./StudentForm"
 import ShowStudent from'./ShowStudent'
 import CampusForm from'./CampusForm'
+import CampForm from './CampForm'
 import Notfound from './Notfound'
 import './App.css'
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
@@ -26,6 +27,9 @@ const routing = (
          <li>
          <button class="btn btn-light" type="button"><Link  to='/ShowStudent'>Students</Link></button>
          </li>
+         <li>
+         <button class="btn btn-light" type="button"><Link  to='/CampForm'>Campus Forms</Link></button>
+         </li>
        </ul>
 </form>
 </nav>
@@ -34,6 +38,10 @@ const routing = (
          <Route exact path="/" component={App} />
          <Route path="/ShowStudent" component={ShowStudent} />
          <Route path="/CampusForm" component={CampusForm} />
+         <Route path="/CampForm" component={CampForm} />
+      
+
+         
 
          <Route component={Notfound} />
        </Switch>
